@@ -6,8 +6,9 @@ import {IoClose} from "react-icons/io5";
 
 const Links = [
  {name: "Resume", path: "/resume"},
- {name: "Services", path: "/"},
- {name: "Contact", path: "/"},
+ {name: "Services", path: "/services"},
+ {name: "Contact", path: "/contact"},
+ {name: "Project", path: "/project"},
 
 ];
 

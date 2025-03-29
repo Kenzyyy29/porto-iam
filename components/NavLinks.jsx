@@ -8,14 +8,19 @@ const NavLinks = () => {
     Resume
    </Link>
    <Link
-    href="/"
+    href="/services"
     className="hover:text-slate-500 ">
     Services
    </Link>
    <Link
-    href="/"
+    href="/contact"
     className="hover:text-slate-500 ">
     Contact
+   </Link>
+   <Link
+    href="/project"
+    className="hover:text-slate-500 ">
+    Project
    </Link>
   </nav>
  );

@@ -15,21 +15,27 @@ const Social = [
 const Home = () => {
  return (
   <div className="bg-black text-white">
-   <section className="flex w-full h-screen pt-[150px]">
-    <div className="max-w-[500px] flex flex-col gap-6 lg:gap-4">
-     <span className="text-3xl font-bold">Frontend Developer</span>
-     <h1 className="text-4xl font-bold">
-      Hello I'm <span className="text-accent">Kenzy</span>
-     </h1>
-     <p className="max-w-[500px] text-lg">
-      I Excel at crafting elegant digital experiences and I am proficient in
-      various programming languages and technologies.
-     </p>
-     <Link href="/">
-      <button className="cursor-pointer border rounded-full py-3 px-2 w-[250px]">
-       Download CV
-      </button>
-     </Link>
+   <section className="flex w-full min-h-screen py-[80px]">
+    <div className=" flex flex-col gap-6 lg:gap-10">
+     <div className="flex flex-col gap-5 px-[100px]">
+      <span className="text-[113px] font-bold">Frontend Developer</span>
+      <div className="flex gap-10">
+       <p className="max-w-[500px] text-lg">
+        Saya merupakan seorang Frontend Developer Pemula, saya belajar Frontend
+        secara otodidak, dan saya selalu bersemangat untuk mempalajari hal baru.
+       </p>
+       <p className="max-w-[500px] text-lg">
+        Saya merupakan seorang Frontend Developer Pemula, saya belajar Frontend
+        secara otodidak, dan saya selalu bersemangat untuk mempalajari hal baru.
+       </p>
+      </div>
+     </div>
+     <div
+      className="w-[1180px] h-[400px] bg-[#dbdbd3] rounded-r-full border"
+      style={{backgroundImage: "url('/project/1.jpg')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      }}></div>
      {/*Socials*/}
      <div className="flex gap-4 lg:mt-4 w-[250px]">
       {Social.map((item, index) => (

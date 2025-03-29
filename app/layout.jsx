@@ -11,7 +11,7 @@ export default function RootLayout({children}) {
   <html lang="en">
    <body className="bg-black">
     <Header />
-    <div className="px-[24px] lg:px-[100px] bg-black">
+    <div className=" bg-black">
      {children}
     </div>
    </body>
