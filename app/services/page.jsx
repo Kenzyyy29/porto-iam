@@ -1,72 +1,54 @@
-"use client";
-
-import {BsArrowDownRight} from "react-icons/bs";
-import Link from "next/link";
+import {FaGithub} from "react-icons/fa";
 
 const services = [
  {
-  num: "01",
-  title: "Web Development",
-  description:
-   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, molestias.",
-  href: "",
+  name: "Web Development",
+  icon: <FaGithub />,
+  description: "Lorem Ipsum Sin Dolor Amet",
  },
  {
-  num: "02",
-  title: "UI/UX Design",
-  description:
-   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, molestias.",
-  href: "",
+  name: "Web Development",
+  icon: <FaGithub />,
+  description: "Lorem Ipsum Sin Dolor Amet",
  },
  {
-  num: "03",
-  title: "Logo Design",
-  description:
-   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, molestias.",
-  href: "",
+  name: "Web Development",
+  icon: <FaGithub />,
+  description: "Lorem Ipsum Sin Dolor Amet",
  },
  {
-  num: "04",
-  title: "SEO",
-  description:
-   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, molestias.",
-  href: "",
+  name: "Web Development",
+  icon: <FaGithub />,
+  description: "Lorem Ipsum Sin Dolor Amet",
+ },
+ {
+  name: "Web Development",
+  icon: <FaGithub />,
+  description: "Lorem Ipsum Sin Dolor Amet",
+ },
+ {
+  name: "Web Development",
+  icon: <FaGithub />,
+  description: "Lorem Ipsum Sin Dolor Amet",
  },
 ];
 
 const Services = () => {
  return (
-  <section className="bg-black text-white flex flex-col lg:flex-row">
-   <div className="flex w-full min-h-screen py-[130px]">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px]">
-     {services.map((service, index) => {
-      return (
-       <div
-        key={index}
-        className="flex-1 flex flex-col justify-center gap-6 group">
-        {/* Top */}
-        <div className="w-full flex justify-between items-center">
-         <div className="text-5xl font-extrabold text-outline text-white group-hover:text-outline-hover transition-all duration-500">
-          {service.num}
-         </div>
-         <Link
-          href={service.href}
-          className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
-          <BsArrowDownRight className="text-primary text-3xl" />
-         </Link>
-        </div>
-        {/* Title */}
-        <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
-         {service.title}
-        </h2>
-        {/* Description */}
-        <p className="text-white/60">{service.description}</p>
-        {/* Border */}
-        <div className="border-b border-white/20 w-full"></div>
-       </div>
-      );
-     })}
-    </div>
+  <section className="flex flex-col gap-4 pt-[80px] px-[100px] text-center w-full h-auto items-center">
+   <h1 className="text-2xl text-white font-bold">SERVICES</h1>
+   <div className="grid grid-cols-3 gap-10">
+    {services.map((item, index) => (
+     <div
+      key={index}
+      className="flex flex-col h-[200px] w-[330px] bg-[#1e1e1e] rounded-lg">
+      <div className="bg-black/60 w-full h-full p-4 flex items-center flex-col justify-center gap-4 hover:bg-transparent transition-all ease-in-out duration-500 text-[#555555] hover:text-white">
+       <div className="text-5xl text-[#354da1]">{item.icon}</div>
+       <h1 className="text-xl font-semibold text-[#354da1]">{item.name}</h1>
+       <p className="">{item.description}</p>
+      </div>
+     </div>
+    ))}
    </div>
   </section>
  );

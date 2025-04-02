@@ -33,6 +33,7 @@ const Header = () => {
     My Protofolio<span className="text-slate-500">.</span>
    </Link>
    <NavLinks />
+   
    <MobileNav />
   </header>
  );
